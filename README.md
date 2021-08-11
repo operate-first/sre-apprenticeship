@@ -1,6 +1,4 @@
-# Operate First template for repositories
-
-Derive new repositories from this template
+# SRE Appernticship!
 
 List of featurese:
 
