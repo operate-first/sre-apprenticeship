@@ -1,21 +1,13 @@
 # See the OWNERS docs at https://go.k8s.io/owners
 
 approvers:
-  - durandom
-  - tumido
-  - HumairAK
+  - coghlanRH
+  - michaelclifford
 
 reviewers:
-  - hemajv
+  - coghlanRH
+  - hpdempsey
+  - aweiteka 
   - durandom
-  - oindrillac
-  - tumido
-  - HumairAK
-  - 4n4nd
-  - harshad16
-  - hemajv
-  - goern
-  - HumairAK
-  - tumido
-  - larsks
-  - quaid
+  - riekrh 
+  - hbrock25
