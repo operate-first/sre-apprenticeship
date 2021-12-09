@@ -22,7 +22,7 @@ Internal collaboration partners we hope to involve beyond OCTO are:
 * UXD (Boston)
 * Existing internal and external-facing Red Hat training offerings
 
-We expect to be able to build this practice on the experience from the existing Boston internship program, that has run for a number of years and has resulted in a high conversion rate to full-time employment. Mentors will be pulled from the OCTO, UXD, and SRE groups involved. The initial budget will come from the Collaboratory initiative. 
+We expect to be able to build this practice on the experience from the existing Boston internship program, that has run for a number of years and has resulted in a high conversion rate to full-time employment. Mentors will be pulled from the OCTO, UXD, and SRE groups involved. The initial budget will come from the Collaboratory initiative.
 
 Key dependencies for the program are:
 * Agreement on how to expand the IBM program to Red Hat;
