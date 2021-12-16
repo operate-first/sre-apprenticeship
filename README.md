@@ -1,33 +1,35 @@
-# Operate First template for repositories
+# Red Hat SRE Apprenticeship Program
 
-Derive new repositories from this template
 
-List of featurese:
+## Summary
 
-## License
+Create a pilot for an apprenticeship program extending IBM’s existing New Collar initiative into Red Hat. The primary goal is to improve Red Hat’s ability to hire qualified engineers while at the same time giving talented individuals who would not go the traditional college path or are switching from other, for example non-technical, subjects an entry point into IT. OCTO will implement the pilot in cooperation with other groups that have a presence in the Boston office and our existing education and research partners.
 
-This template ensures new repos are created compliant with [ADR 0001](https://www.operate-first.cloud/blueprints/blueprint/docs/adr/0001-use-gpl3-as-license.md) and use GNU GPL v3 license.
 
-## AI-CoE CI Github application
+## Background & Detail
 
-AI-CoE CI provides easy and quick integration for build pipelines and checks for pull requests.
+Like many companies, Red Hat is struggling to fill positions in app-dev, data science, IT and SRE roles. This reflects an overall shortness of qualified candidates in the industry. The default path in the US to a career in these fields is through college, even though many jobs do not require a college degree, nor does the typical college education prepare candidates especially well for real-world work. In addition, college education is not easily attainable for many talented candidates because of limitations in our education systems and socio-economic realities.
 
-An empty [`.aicoe-ci.yaml`](.aicoe-ci.yaml) is created here, disabling all checks via this CI provider by default. Documentation can be found [here](https://github.com/AICoE/aicoe-ci/).
+Apprenticeship programs offer an alternative through a mix of on-the-job training of applied skills and focused supporting education, while receiving a salary. In countries that have experience in IT-related apprenticeship programs  - Germany is a good example with more than 20 years - , this has proven to work. A growing number of tech companies have expanded their engagement in the space of non-college training and education programs. This includes industry leaders such as Google who have in recent years launched major campaigns for non-college education paths on a global level.  The Department of Labor runs a Federal Apprenticeship program to expand the model.
 
-## Prow CI
+IBM has launched its own skill-based training initiative New Collar, that includes formal apprenticeships and is registered in the Federal apprenticeship program. Today the IBM New Collar program includes Software Development, Cybersecurity, UXD, Data Science and other areas. Requirements for candidates in the IBM program are a high school diploma or equivalent as well as some domain-specific knowledge, that could be from a community college associate degree, bootcamp, or self-taught.
 
-Prow is a CI provider developed for Kubernetes needs. Provides chat-ops management of pull requests, issues and declarative management for labels, branches and many more.
+Our plan is to adopt the IBM New Collar program to Red Hat with a pilot led by OCTO in the Boston Office and expand it specifically to Cloud Operations & SRE roles. The pilot will leverage existing IBM resources and partnerships as well as extend to some of our local Boston-area collaborations. This includes close cooperation with our existing research and development partners at Boston University and the Open Cloud Initiative, which offers us an excellent training environment. We also are planning to build cooperation with Boston-area schools and boot-camp programs that serve the inner-city areas and reach back into local high-schools.
 
-We host our own deployment of Prow in Operate First available at [https://prow.operate-first.cloud/](https://prow.operate-first.cloud/).
+Internal collaboration partners we hope to involve beyond OCTO are:
+* People Team
+* SRE Team (Boston)
+* UXD (Boston)
+* Existing internal and external-facing Red Hat training offerings
 
-Supported commands are listed [here](https://prow.operate-first.cloud/command-help). We have also enabled Prow to consume on-repository configuration files. You can specify your config in [`.prow.yaml`](.prow.yaml). Additional centralized configuration can be found in the [thoth-application repository](https://github.com/thoth-station/thoth-application/tree/master/prow/overlays/cnv-prod).
+We expect to be able to build this practice on the experience from the existing Boston internship program, that has run for a number of years and has resulted in a high conversion rate to full-time employment. Mentors will be pulled from the OCTO, UXD, and SRE groups involved. The initial budget will come from the Collaboratory initiative.
 
-## Pre-commit
+Key dependencies for the program are:
+* Agreement on how to expand the IBM program to Red Hat;
+* A fully open Red Hat Boston office.
 
-By extension to Prow, we define a default pre-commit config for new repositories. Default hook configuration can be found in [`.pre-commit-config.yaml`](.pre-commit-config.yaml). Pre-commit is executed via Prow, see [`.prow.yaml`](.prow.yaml) for details.
+*The program should to the degree possible and applicable be run as an Open Source project. This primarily applies to the curriculum development.*
 
-We enable yamllint hook by default, since most of our repositories use yaml files extensively. Default configuration for this hook is located at [`yamllint-config.yaml`](yamllint-config.yaml).
+The success definition is the successful conversion of program participants to full-time employees in Red Hat.
 
-To install and enable pre-commit locally please follow the instructions [here](https://pre-commit.com/#quick-start).
-
-It is advised for all contributors to enable pre-commit git hook via `pre-commit install` after cloning any repo within Operate First.
+Further expansion of the program into other parts of Red Hat and ideas like continuous education and college-level programs in cooperation with our education partners will be discussed after the initial pilot.
